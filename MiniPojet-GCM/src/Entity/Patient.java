@@ -2,37 +2,15 @@ package Entity;
 
 import java.util.Date;
 
-public class Patient {
+public class Patient extends Personne{
 
-	private String nom;
-	private String prenom;
 	private Date dateNaissance = new Date();
-	private int cin;
 	private String sexe;
 	
-	public Patient(String nom, String prenom, Date dateNaissance, int cin, String sexe) {
-		super();
-		this.nom = nom;
-		this.prenom = prenom;
+	public Patient(int cin, String nom, String prenom, String service, Date dateNaissance, String sexe) {
+		super(cin, nom, prenom, service);
 		this.dateNaissance = dateNaissance;
-		this.cin = cin;
 		this.sexe = sexe;
-	}
-
-	public String getNom() {
-		return nom;
-	}
-
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
-	public String getPrenom() {
-		return prenom;
-	}
-
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
 	}
 
 	public Date getDateNaissance() {
@@ -43,20 +21,17 @@ public class Patient {
 		this.dateNaissance = dateNaissance;
 	}
 
-	public int getCin() {
-		return cin;
-	}
-
-	public void setCin(int cin) {
-		this.cin = cin;
-	}
-
 	public String getSexe() {
 		return sexe;
 	}
 
 	public void setSexe(String sexe) {
 		this.sexe = sexe;
+	}
+
+	@Override
+	public String toString() {
+		return "Patient [dateNaissance=" + dateNaissance + ", sexe=" + sexe + ", toString()=" + super.toString() + "]";
 	}
 	
 	
