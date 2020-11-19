@@ -17,4 +17,10 @@ public class Hospitalisation extends Admission{
 	public void setDuree(int duree) {
 		this.duree = duree;
 	}
+
+	@Override
+	public String toString() {
+		return "Hospitalisation [duree=" + duree + ", toString()=" + super.toString() + "]";
+	}
+	
 }

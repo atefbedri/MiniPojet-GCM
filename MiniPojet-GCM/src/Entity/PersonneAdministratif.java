@@ -6,4 +6,10 @@ public class PersonneAdministratif extends Personne{
 		super(cin, nom, prenom, service);
 	}
 
+	@Override
+	public String toString() {
+		return "PersonneAdministratif [toString()=" + super.toString() + "]";
+	}
+
+	
 }

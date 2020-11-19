@@ -40,5 +40,13 @@ public class Personne {
 	public void setService(String service) {
 		this.service = service;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Personne [Cin=" + Cin + ", nom=" + nom + ", prenom=" + prenom + ", service=" + service + "]";
+	}
+	
+	
 	
 }

@@ -16,4 +16,15 @@ public class Medecin extends PersonneMedical{
 		this.specialité = specialité;
 	}
 
+	@Override
+	public String toString() {
+		return "Medecin [specialité=" + specialité + ", Cin=" + Cin + ", nom=" + nom + ", prenom=" + prenom
+				+ ", service=" + service + "]";
+	}
+	
+	
+	
+	
+
+	
 }

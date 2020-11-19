@@ -28,7 +28,11 @@ public class DossierAdministratif extends Dossier{
 		Prestation = prestation;
 	}
 
-	
+	@Override
+	public String toString() {
+		return "DossierAdministratif [listAdmission=" + listAdmission + ", Prestation=" + Prestation + ", toString()="
+				+ super.toString() + "]";
+	}
 
 	
 	

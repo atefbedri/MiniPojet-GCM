@@ -16,4 +16,6 @@ public class Infirmier extends PersonneMedical{
 		this.specialité = specialité;
 	}
 	
+	
+	
 }

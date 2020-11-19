@@ -23,5 +23,12 @@ public class Dossier {
 	public void setTypeDossier(String typeDossier) {
 		this.typeDossier = typeDossier;
 	}
+
+	@Override
+	public String toString() {
+		return "Dossier [idDossier=" + idDossier + ", typeDossier=" + typeDossier + "]";
+	}
+	
+	
 	
 }

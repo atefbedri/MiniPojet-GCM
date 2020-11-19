@@ -44,6 +44,12 @@ public class DossierMedical extends Dossier{
 	public void setOpertation(String opertation) {
 		this.opertation = opertation;
 	}
+
+	@Override
+	public String toString() {
+		return "DossierMedical [date=" + date + ", Diagnostic=" + Diagnostic + ", traitement=" + traitement
+				+ ", opertation=" + opertation + ", toString()=" + super.toString() + "]";
+	}
 	
 	
 

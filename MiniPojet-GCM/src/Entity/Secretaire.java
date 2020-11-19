@@ -6,4 +6,9 @@ public class Secretaire extends PersonneMedical{
 		super(cin, nom, prenom, service);
 	}
 
+	@Override
+	public String toString() {
+		return "Secretaire [toString()=" + super.toString() + "]";
+	}
+
 }

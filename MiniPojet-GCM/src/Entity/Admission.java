@@ -49,4 +49,12 @@ public class Admission {
 		this.observatiob = observatiob;
 	}
 
+	@Override
+	public String toString() {
+		return "Admission [dateDebut=" + dateDebut + ", dateSortie=" + dateSortie + ", medicinREsponsable="
+				+ medicinREsponsable + ", observatiob=" + observatiob + "]";
+	}
+	
+	
+
 }
