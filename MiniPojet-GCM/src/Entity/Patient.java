@@ -33,8 +33,4 @@ public class Patient extends Personne{
 	public String toString() {
 		return "Patient [dateNaissance=" + dateNaissance + ", sexe=" + sexe + ", toString()=" + super.toString() + "]";
 	}
-	
-	
-	
-	
 }

@@ -1,6 +1,6 @@
 package Entity;
 
-public class PersonneMedical extends Personne{
+public abstract class PersonneMedical extends Personne{
 
 	public PersonneMedical(int cin, String nom, String prenom, String service) {
 		super(cin, nom, prenom, service);
@@ -11,5 +11,6 @@ public class PersonneMedical extends Personne{
 		return "PersonneMedical [toString()=" + super.toString() + "]";
 	}
 	
-	
+	abstract void Afficher();
+
 }
