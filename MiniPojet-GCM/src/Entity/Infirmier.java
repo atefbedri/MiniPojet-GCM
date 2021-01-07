@@ -4,8 +4,8 @@ public class Infirmier extends PersonneMedical{
 	
 	String specialite;
 	
-	public Infirmier(int cin, String nom, String prenom, String service) {
-		super(cin, nom, prenom, service);
+	public Infirmier(int cin, String nom, String prenom, String service, String sexe) {
+		super(cin, nom, prenom, service,sexe);
 	}
 
 	public String getSpecialite() {

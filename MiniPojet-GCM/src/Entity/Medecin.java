@@ -4,8 +4,8 @@ public class Medecin extends PersonneMedical{
 
 	String specialite;
 
-	public Medecin(int cin, String nom, String prenom, String service) {
-		super(cin, nom, prenom, service);
+	public Medecin(int cin, String nom, String prenom, String service, String sexe) {
+		super(cin, nom, prenom, service,sexe);
 	}
 	
 	public String getSpecialite() {
@@ -18,7 +18,7 @@ public class Medecin extends PersonneMedical{
 
 	@Override
 	public String toString() {
-		return "Medecin [specialité=" + specialite + ", Cin=" + Cin + ", nom=" + nom + ", prenom=" + prenom
+		return "Medecin [specialitï¿½=" + specialite + ", Cin=" + Cin + ", nom=" + nom + ", prenom=" + prenom
 				+ ", service=" + service + "]";
 	}
 

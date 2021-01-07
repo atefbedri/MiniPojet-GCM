@@ -2,8 +2,8 @@ package Entity;
 
 public class Secretaire extends PersonneMedical{
 
-	public Secretaire(int cin, String nom, String prenom, String service) {
-		super(cin, nom, prenom, service);
+	public Secretaire(int cin, String nom, String prenom, String service, String sexe) {
+		super(cin, nom, prenom, service, sexe);
 	}
 
 	@Override
