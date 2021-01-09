@@ -90,11 +90,13 @@ public class Personne implements PersonneInterface{
 	public ArrayList<Personne> getPersonne(){
 		try {
 			statement = connexion.createStatement();
-	        ResultSet resultat = statement.executeQuery( "SELECT *  FROM personne;" );
+	        ResultSet resultat = statement.executeQuery( "SELECT *  FROM personne" );
+	        ArrayList<Personne> rslt = new ArrayList<Personne>();
 	        while(resultat.next())  
 	        	System.out.println(resultat.getString(1)+"  "+resultat.getString(2)+"  "+resultat.getString(3));  
 		}catch(SQLException e) {
 			e.printStackTrace();
+			return null;
 		}
 		return null;
 	}
@@ -112,7 +114,7 @@ public class Personne implements PersonneInterface{
 	        pStatement.setString(5, personne.getSexe());
 	        int rowsInserted = pStatement.executeUpdate();
 	        if (rowsInserted > 0) {
-	            System.out.println("A new user was inserted successfully!");
+	            System.out.println("A new person was inserted successfully!");
 	        }
 		}catch(SQLException e) {
 			e.printStackTrace();
@@ -133,7 +135,7 @@ public class Personne implements PersonneInterface{
              
             int rowsDeleted = dStatement.executeUpdate();
             if (rowsDeleted > 0) {
-                System.out.println("A user was deleted successfully!");
+                System.out.println("A person was deleted successfully!");
             }
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -157,7 +159,7 @@ public class Personne implements PersonneInterface{
 			pstatement.setLong(5, personne.getCin());
 	         int rowsUpdated = pstatement.executeUpdate();
 	         if (rowsUpdated > 0) {
-	             System.out.println("An existing user was updated successfully!");
+	             System.out.println("An existing person was updated successfully!");
 	         }
 
 		} catch (SQLException e) {
