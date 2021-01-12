@@ -8,7 +8,7 @@ public class Patient extends Personne{
 	private String sexe;
 	
 	public Patient(int cin, String nom, String prenom, String service, Date dateNaissance, String sexe) {
-		super(cin, nom, prenom, service);
+		super(cin, nom, prenom, service,sexe);
 		this.dateNaissance = dateNaissance;
 		this.sexe = sexe;
 	}
@@ -33,8 +33,4 @@ public class Patient extends Personne{
 	public String toString() {
 		return "Patient [dateNaissance=" + dateNaissance + ", sexe=" + sexe + ", toString()=" + super.toString() + "]";
 	}
-	
-	
-	
-	
 }

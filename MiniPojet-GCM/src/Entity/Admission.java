@@ -1,20 +1,23 @@
 package Entity;
 
+import java.util.ArrayList;
 import java.util.Date;
 
-public class Admission {
-	
+import Interfaces.AdmissionInterface;
+
+public class Admission implements AdmissionInterface{
+		
 	Date dateDebut = new Date();
 	Date dateSortie = new Date();
 	String medicinREsponsable;
-	String observatiob;
+	String observation;
 	
-	public Admission(Date dateDebut, Date dateSortie, String medicinREsponsable, String observatiob) {
+	public Admission(Date dateDebut, Date dateSortie, String medicinREsponsable, String observation) {
 		super();
 		this.dateDebut = dateDebut;
 		this.dateSortie = dateSortie;
 		this.medicinREsponsable = medicinREsponsable;
-		this.observatiob = observatiob;
+		this.observation = observation;
 	}
 
 	public Date getDateDebut() {
@@ -41,18 +44,47 @@ public class Admission {
 		this.medicinREsponsable = medicinREsponsable;
 	}
 
-	public String getObservatiob() {
-		return observatiob;
+	public String getObservation() {
+		return observation;
 	}
 
-	public void setObservatiob(String observatiob) {
-		this.observatiob = observatiob;
+	public void setObservatiob(String observation) {
+		this.observation = observation;
 	}
 
 	@Override
 	public String toString() {
 		return "Admission [dateDebut=" + dateDebut + ", dateSortie=" + dateSortie + ", medicinREsponsable="
-				+ medicinREsponsable + ", observatiob=" + observatiob + "]";
+				+ medicinREsponsable + ", observatiob=" + observation + "]";
+	}
+
+	@Override
+	public ArrayList<Admission> getAdmission() {
+		return null;
+	}
+
+	@Override
+	public boolean createAdmission(Admission admission) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteAdmission(Admission admission) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateAdmission(Admission admission) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Admission findByidAdmission(int id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
